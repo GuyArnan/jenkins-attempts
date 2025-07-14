@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')
-        IMAGE_NAME = 'GUYARNAN/jenkins-try'
+        IMAGE_NAME = 'guyarnan/jenkins-try'
     }
     stages {
         // stage('Clone Repo') {
