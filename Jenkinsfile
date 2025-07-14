@@ -2,12 +2,12 @@ pipeline {
     agent any
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')
-        IMAGE_NAME = 'yourdockerhubusername/your-image-name'
+        IMAGE_NAME = 'GUYARNAN/jenkins-try'
     }
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/yourusername/your-repo.git'
+                git 'git@github.com:GuyArnan/jenkins-attempts.git'
             }
         }
         stage('Build Image') {
