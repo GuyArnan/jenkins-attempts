@@ -5,11 +5,11 @@ pipeline {
         IMAGE_NAME = 'GUYARNAN/jenkins-try'
     }
     stages {
-        stage('Clone Repo') {
-            steps {
-                git 'git@github.com:GuyArnan/jenkins-attempts.git'
-            }
-        }
+        // stage('Clone Repo') {
+        //     steps {
+        //         git 'git@github.com:GuyArnan/jenkins-attempts.git'
+        //     }
+        // }
         stage('Build Image') {
             steps {
                 sh 'docker build -t $IMAGE_NAME .'
